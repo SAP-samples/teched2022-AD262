@@ -1,16 +1,17 @@
-# Session ID - Session Title
+# AD262 - Compose full stack applications in SAP Business Application Studio
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2022 session called D262 - Compose full stack applications in SAP Business Application Studio.  
 
 ## Overview
 
-This session introduces attendees to...
+In this session you will learn how to use the SAP SAP Business Application Studio (BAS) to rapidly develop apps on SAP Business 
+Technology Platform (SAP BTP). You will learn how to build a full blow CRUD application including backend services and a UI application in a matter of minutes with only visual editors. You will connect the application to an SAP S/4HANA API. Learn how to easily switch to code, work on from there to create additional business logic for your service to finally make the application available on BTP with a "one click deployment"
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+The requirements to follow the exercises in this repository can be found in the [Getting Started](exercises/ex0/) section below.
 
 ## Exercises
 
