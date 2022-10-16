@@ -27,7 +27,7 @@ Next up you have a choice of templates, choose the **List Report Object Page**.
 
 ![](/exercises/ex4/images/LCAP_44.png)
 
-As a last step choose the (service) entity on which the new app should be created. Choose **Capex**.
+As a last step choose the (service) entity on which the new app should be created. Choose **Capex**. Then press **Finish**
 
 ![](/exercises/ex4/images/LCAP_45.png)
 
@@ -45,17 +45,18 @@ Click **list Report** Page in the page map.
 
 ![](/exercises/ex4/images/LCAP_47.png)
 
-You can now see the details of this page. Expand the **Columns** under **Table** and see the properties of your service entity. Drag and drop the **firstname** and **lastname** fields from their position at the end to the top spots, so it looks like this:
+You can now see the details of this page. Expand the **Columns** under **Table** and see the properties of your service entity. It looks like this:
 
 ![](/exercises/ex4/images/LCAP_48.png)
 
-We will now add more columns for our list than were generated. We will add the associations to the business partner and the category. For this hover the **Columns** entry with your mouse, a **+** sign will come up on the right. Press it and select **Add Basic Columns**
+Click on the **category_ID** column and change its label to **category**, so the label looks nicer. Then under **Text** select **category/name**, this will configure the list to show the name of the category instead of its id.
 
 ![](/exercises/ex4/images/LCAP_48_2.png)
 
-In the dialog's dropdown that now shows up select the **BusinessPartner** property and the **name** of the **category**, then close the dropdown and press **Add**. This will close the dialog and add the 2 new columns to the list
+Click on the **BusinessPartner_BusinessPartner** column on the left, and change its label to **BusinessPartner**, again to make it look nicer
 
 ![](/exercises/ex4/images/LCAP_48_3.png)
+
 
 ## Adjust the Object Page of your UI Application and add Value Helps
 
@@ -73,7 +74,9 @@ On the dialog, choose **name** for **Value Description Property** and then under
 
 With this we have chosen to make to category field a dropdown (because it has a small number of entries the list doesn't get too long), to only show the name of the category and not its id. With the **Text Arrangement** option it would have been possible to also show its id in different orders of name and id.
 
-After you have closed the dialog, still on the panel under **Text** select **category/name**. This makes sure that not only the list in the dropdown only shows the name and not an id but also in the field when an entry was selected.
+After you have closed the dialog, still on the panel under **Text** select **category/name**, also press the button next to the field in the **Text Arrangement** box. This makes sure that not only the list in the dropdown shows the name and not an id but also in the field when an entry was selected, the pressing the button takes over the setting from the value help for the field as well.
+
+![](/exercises/ex4/images/LCAP_49_3.png)
 
 Now we will also carry out similar steps for the Business Partner. Only this time we will create a full blown value help instead of a dropdown because we expect the list of business partners from the backend to be too huge to handle in a dropdown.
 
@@ -81,19 +84,7 @@ Select property **BusinessPartner_BusinessPartner**, then in the panel on the ri
 
 On the dialog, switch the **Display as Dropdown** option off, then press **Add Column** and select **FirstName**. Then do the same and add **LastName**. Finally press **Apply**
 
-![](/exercises/ex4/images/LCAP_49_3.png)
-
-Let's finally do some rearrangement of the page. In it's current stage all the fields are displayed in one section. Let's nor create a second one and move the first and last name of the requestor for Capex into it.
-
-Go to the **Sections** entry and press the **+** button on the right to add a new section.
-
-Choose **Form Section** and enter a new label **Requestor**
-
-![](/exercises/ex4/images/LCAP_410.png)
-
-Now drag the **firstname** and **lastname** fields from their position in the form under **Fields** in the form of the new **Requestor** section
-
-![](/exercises/ex4/images/LCAP_411.png)
+![](/exercises/ex4/images/LCAP_49_4.png)
 
 Close the Page Editor and navigate back to **Home** tab.
 
