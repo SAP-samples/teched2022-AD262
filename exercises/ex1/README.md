@@ -8,7 +8,7 @@ We will also test the service and see whether it runs or not.
 Open your browser and launch the so-called "lobby" using the following URL:
 ```URL
 https://lcapteched-applicationdevelopment.lcnc.cfapps.eu10.hana.ondemand.com/lobby 
-````
+```
 You should see the central entry for low-code / no-code development on SAP BTP.
 
 ![](/exercises/ex1/images/lobby_01.png)
@@ -87,5 +87,4 @@ Our data model should now look like this:
 
 You've now created a data model including persistence in CAP (Cloud Application Programming model) that can be later used to be deployed to the SAP HANA database we will use. Note that you have not seen any CAP related commands or syntax.
 
-Continue to - [Exercise 2](../ex2/README.md)
-
+Continue to - [Exercise 1.5](../ex1.5/README.md)
