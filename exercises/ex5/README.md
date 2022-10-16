@@ -24,7 +24,7 @@ Click on the button next to **Categroies** to open the API which provides the li
 
 The data is queried and exposed using OData V4. Please note that this service is run from an in-memory database that is automatically spun up for you during the preview, so any modification to the data will not persisted.
 
-Now do the same for **A_BusinessPartner**. This will show you something like this:
+Now do the same for **BusinessPartner**. This will show you something like this:
 
 ![](/exercises/ex5/images/LCAP_53.png)  
 
@@ -62,7 +62,7 @@ To get there first press the **Stop Preview** button.
 
 ![](/exercises/ex5/images/LCAP_59.png) 
 
-The button changes to become a **Preview** button. This time select the **With Live Data** option. After some seconds again the **Application Development Preview Page** comes up and looks like the one before. However if you again press the rightmost button next to **A_BusinessPartner** you will get a lot more data than before, it is the real business partner data from the S/4 backend:
+The button changes to become a **Preview** button. This time select the **With Live Data** option. After some seconds again the **Application Development Preview Page** comes up and looks like the one before. However if you again press the rightmost button next to **BusinessPartner** you will get a lot more data than before, it is the real business partner data from the S/4 backend:
 
 ![](/exercises/ex5/images/LCAP_510.png) 
 
