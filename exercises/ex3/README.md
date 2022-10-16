@@ -1,6 +1,6 @@
 # Exercise 3 - Create a service (API)
 
-After the creation of the data model ( persistence layer ) we will now select what to expose to the outside world as an API. This API can then be consumed by UI apps, workflows, etc. .For this we will add several entities to a service. CAP will expose this service automatically as a full blown OData service.
+After the creation of the data model ( persistence layer ) we will now select what to expose to the outside world as an API. This API can then be consumed by UI apps, workflows, etc.. For this we will add several entities to a service. CAP will expose this service automatically as a full blown OData service.
 
 ## Create new service entities
 
@@ -25,6 +25,8 @@ Add a third entity, this time choose **API_BUSINESS_PARTNER.A_BusinessPartner**.
 - **Business Partner**
 - **FirstName**
 - **LastName**
+
+Also change the **Name** to be **BusinessPartner**
 
 ![](/exercises/ex3/images/LCAP_33.png)
 
