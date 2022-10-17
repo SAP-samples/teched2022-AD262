@@ -33,7 +33,8 @@ The requirements to follow the exercises in this repository can be found in the 
 - [Exercise 3 - Create a service ](exercises/ex3/README.md)
 - [Exercise 4 - Create a List Report UI Application ](exercises/ex4/README.md)
 - [Exercise 5 - Preview your service and application ](exercises/ex5/README.md)
-- [Exercise 6 - Deploy your service and application ](exercises/ex6/README.md)
+- [Exercise 6 - Add Application Logic to the Application ](exercises/ex6/README.md)
+- [Exercise 7 - Deploy your service and application ](exercises/ex7/README.md)
 
 
 Start the exercises [here](exercises/ex0/README.md).
