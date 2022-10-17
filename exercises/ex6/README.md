@@ -1,6 +1,6 @@
 # Exercise 6 - Add Application Logic to the Application
 
-## The addtional scenario
+## The addtional Scenario
 
 While we already have a running CRUD application, we want to improve it now. 
 We would like to get a visual hint that the criticality of a request is high depending on the total cost of the request. This sholoud be shown in the list of Capex requirements like this:
@@ -29,13 +29,29 @@ Now a new side pane opens at the left and it contains the file structure of our 
 
 Let's open the file **schema.cds** in the **db** folder. You can now see a text file which reflects the data models for Capex and Category that we have created using the graphical modeler. This is code in the Core Data Service (CDS) format and you could now edit it and enhance it. For CDS files this even works in both directions. You can either change the CDS file and the change is reflected in the graphical modeler and vice versa. Being able to edit in both direction doesn't work for all file types (e.g. not for Javascript files) but as a general rule you can always at any point leave the graphical editors, switch to the file structure and from then on code in text editors.
 
+## Add a new Property to the Data Model
+
+In order to control the crtiticality of a Capex registration entry on the UI, we need a new property. To get it, on the **Home** page, under **Data Model** press on the **Capex** entry. In the Data Modeler, by pressing on the header area of the **Capex** entity, bring up the menu and press the pencil like icon to be able to add the properties of the entity. Add a property called **criticality** of type **Integer** to the data model: 
+
 ![](/exercises/ex6/images/LCAP_63.png)
+
+Press **Update** to save the change. The property is now added to the data model and because our **Capex** service entity also projects from the **Capex** data model 1:1 it is also automatically part of the service entity.
+
+Note, we have added the new property to our data base. As the property is only needed to control the UI and as you will see in a later step is calculated at runtim, there is really no need to add it to the data base. There are also options to add it as a calculation field to a service only, but for simplicity reasons we still add it to the data base.
+
 ![](/exercises/ex6/images/LCAP_64.png)
+
+## Add an Application Logic Handler to the project
+
+Now we need to add the logic part. For this for the first time we have to code in a text editor. Using the file explorer (if not still expanded, expand it via Hamburger menu->View->Explorer), look for the **srv** folder and expand it. This is where the graphical modelers has created our service, it is in the **service.cds** file. We don't need to look into it, but we need to know it is in there. Our service, as mentioned before, is based on CAP. In CAP one can create a new file, with the same name as the file for the service, just with an extension "js" for JavaScirpt. If the CAP interpreter find such a file, it will automatically look for custome handlers for the service. This is what we need now. 
+
+Select the **srv** folder and with a right mouse click invoke **New File**. Enter **service.js** as a name:
+
 ![](/exercises/ex6/images/LCAP_65.png)
-![](/exercises/ex6/images/LCAP_66.png)
-![](/exercises/ex6/images/LCAP_67.png)
-![](/exercises/ex6/images/LCAP_68.png)
-![](/exercises/ex6/images/LCAP_69.png)
+
+Press **Ok**.
+
+Now a new empty text file is openend. Add the following code to the file:
 
 ```Javascript
 const cds = require('@sap/cds')
@@ -56,6 +72,21 @@ module.exports = cds.service.impl(async function() {
 });
 
 ```
+
+Save the file.
+
+Let's have a look what happens in the code. It defines a handler that is invoked after (**this.after**) the was a **READ** request for the **Capex** entity. The request could for example be created as an OData GET request from the broswer. The CAP framework invokes our custom handler and passes the data into it, that it has just retireved from the data base. It might be one or more entities. Our code looks into the data, it looks whether **totalcost** is greater than 200, if so, it sets our new **criticality** property to 1 otherwise to 2.
+
+So, with this, the criticality is set according to the total cost of our Capex express.
+
+## Adjust the UI based on the Application Logic
+
+![](/exercises/ex6/images/LCAP_66.png)
+![](/exercises/ex6/images/LCAP_67.png)
+![](/exercises/ex6/images/LCAP_68.png)
+![](/exercises/ex6/images/LCAP_69.png)
+
+
 
 
 
