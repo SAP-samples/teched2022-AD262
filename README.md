@@ -26,14 +26,14 @@ The requirements to follow the exercises in this repository can be found in the 
 
 ## Exercises
 
-- [Getting Started - Preparation Part 1](exercises/ex0/README.md)
+- [Getting Started - Preparation](exercises/ex0/README.md)
 - [Exercise 1 - Create a data model with the SAP Business Application Studio ](exercises/ex1/README.md)
-- [Exercise 1.5 - Reference an S/4 HANA CLoud Service in your Data Model ](exercises/ex1.5/README.md)
+- [Exercise 1.5 - Reference an S/4 HANA CLoud Service in your eata model ](exercises/ex1.5/README.md)
 - [Exercise 2 - Add some sample data ](exercises/ex2/README.md)
 - [Exercise 3 - Create a service ](exercises/ex3/README.md)
-- [Exercise 4 - Create a List Report UI application ](exercises/ex4/README.md)
+- [Exercise 4 - Create a list report UI application ](exercises/ex4/README.md)
 - [Exercise 5 - Preview your service and application ](exercises/ex5/README.md)
-- [Exercise 6 - Add Application Logic to the application ](exercises/ex6/README.md)
+- [Exercise 6 - Add application logic to the application ](exercises/ex6/README.md)
 - [Exercise 7 - Deploy your service and application ](exercises/ex7/README.md)
 
 

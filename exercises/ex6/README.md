@@ -1,6 +1,6 @@
 # Exercise 6 - Add Application Logic to the Application
 
-## The addtional Scenario
+## The additional Scenario
 
 While we already have a running CRUD application, we want to improve it now. 
 We would like to get a visual hint that the criticality of a request is high depending on the total cost of the request. This sholoud be shown in the list of Capex requirements like this:
