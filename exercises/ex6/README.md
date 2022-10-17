@@ -31,7 +31,7 @@ Let's open the file **schema.cds** in the **db** folder. You can now see a text 
 
 ## Add a new Property to the Data Model
 
-In order to control the crtiticality of a Capex registration entry on the UI, we need a new property. To get it, on the **Home** page, under **Data Model** press on the **Capex** entry. In the Data Modeler, by pressing on the header area of the **Capex** entity, bring up the menu and press the pencil like icon to be able to add the properties of the entity. Add a property called **criticality** of type **Integer** to the data model: 
+In order to control the crtiticality of a Capex registration entry on the UI, we need a new property. To get it, on the **Home** page, under **Data Models** press on the **Capex** entry. In the Data Modeler, by pressing on the header area of the **Capex** entity, bring up the menu and press the pencil like icon to be able to add the properties of the entity. Add a property called **criticality** of type **Integer** to the data model: 
 
 ![](/exercises/ex6/images/LCAP_63.png)
 
@@ -81,16 +81,37 @@ So, with this, the criticality is set according to the total cost of our Capex e
 
 ## Adjust the UI based on the Application Logic
 
+We now need to adjust our UI application making use of the values in Capex's **criticality** property. We are going to use the **totalcost** field on the UI to change its look depending on the value of the criticality.
+
+For this Oón the **Home** page, under **User Interfaces** click on your **My List Report** application. The **Page Map** opens, for the **List Report** page, invoke the pencil shaped icon to configure the page. Expand the **Table** and then the **Columns** entry and select the **totalcost** property. 
+
+Look for the **Criticality** box under the properties of **totalcost**. We can use it to display the criticality of the totalcost. If you exapnd the dropdown here, you find a list of the property of the **Capex** entity. Choose the criticality one. Note, the criticality functionality is called like we have called our service entity's property, but we could have chosen any other name for the property as well. 
+
 ![](/exercises/ex6/images/LCAP_66.png)
+
+After a couple of seconds after you have selected the **critiality** property, a new **Criticality Representation** box appears. Here we can configure how the criticality is visualy represented, with just a color, with an addition icon or not at all. In our case, we want to add an icon as well to a color change, so choose the **With Icon** entry
+
 ![](/exercises/ex6/images/LCAP_67.png)
+
+## Preview the Application
+
+We have now finished configuring the application and we can preview it again.
+
+Go back to the **Home** tab and on the **Preview** button in the upper right part of the screen, select **With Live Data**. As before after a couple of seconds the **Project Preview** page comes up. Click on the **My List Report** application again. It should come up as before. Click on its **Create** button above the empty list.
+
+Fill out the form, pick any *BusinessPartner** from the value help and any **Category** from the dropdown and fill in a **description** of your choice. Make sure that for this first request you choose a value for **totalcost** which is *smaller* than the threshold in our application handler code, so smaller than **200**
+
 ![](/exercises/ex6/images/LCAP_68.png)
+
+Press the **Create** button at the bottom of the page to save the data. Then press the **<** button in the top left part of the screen to return to the list page. Here press the **Go** button and your new entry should appear in the list. Not how the text in the **totalcost** column is now yellow and has a warning icon with it, indicating a criticality of lower priority.
+
 ![](/exercises/ex6/images/LCAP_69.png)
 
+Now press **Create** again to add a second entry. This time make sure that you choose a value that is **greater** than 200. After you have saved the entry and returned to the list page you should see the new entry also, colored in red and with an appropriate icon, indicating the highest criticality:
 
-
-
+![](/exercises/ex6/images/LCAP_60.png)
 
 ## Summary
-We have now added application logic to the application.
+We have now added application logic to the application. We have learned that using the low code tools, one can switch to normal textual editors to change / add code. 
 
 Continue to - [Exercise 7](../ex7/README.md)
