@@ -29,4 +29,3 @@ https://lcapteched-applicationdevelopment.lcnc.cfapps.eu10.hana.ondemand.com/lob
 
 
 Continue to - [Exercise 1](../ex1/README.md)
-"p

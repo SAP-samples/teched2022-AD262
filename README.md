@@ -9,7 +9,7 @@ This repository contains the material for the SAP TechEd 2022 session called D26
 In this session you will learn how to use the SAP SAP Business Application Studio (BAS) to rapidly develop apps on SAP Business 
 Technology Platform (SAP BTP). You will learn how to build a full blow CRUD application including backend services and a UI application in a matter of minutes with only visual editors. You will connect the application to an SAP S/4HANA API. Learn how to easily switch to code, work on from there to create additional business logic for your service to finally make the application available on BTP with a "one click deployment"
 
-## The use case
+## The Use Case
 
 In this session we will enable of Capital Expenditures (CAPEX) process. Capital expenditures have a deep effect on the Profit & Loss balance sheet of a company.
 CAPEX is about providing budget for buying & maintaining fixed / integral assets (FA/IA). 
