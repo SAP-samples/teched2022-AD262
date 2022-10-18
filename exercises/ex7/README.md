@@ -1,4 +1,4 @@
-# Exercise 6 - Deploy your service and application
+# Exercise 7 - Deploy your service and application
 
 In this section we will deploy the project to the Business Technology Platform (BTP). 
 
@@ -14,12 +14,32 @@ Press the **Log In** button
 
 ![](/exercises/ex7/images/LCAP_75.png)  
 
-Then in the top part of the screen enter one after another:
-- the Cloud Foundry Endpoint **https://api.cf.eu10.hana.ondemand.com**
-- the email address of the user that was assigned to you
-- the password for the user that was assigned to you
-- confirm the organization **TechEdLCAP_lcapteched2021**
-- confirm the space **dev**
+Then in the new screen enter:
+- the Cloud Foundry Endpoint **https://api.cf.eu10-004.hana.ondemand.com** . **Note**: that the system recommends the URL https://api.cf.eu10.hana.ondemand.com make sure you manually enter the **-004** part behind **eu10** !
+
+![](/exercises/ex7/images/LCAP_75-1.png)  
+
+- choose **SSO Passcode** as the authentiaction method
+- press the link **Open a new browser page to generate your SSO passcode**
+
+This opens a new page, with a temporary passcode created for you user. 
+
+- press the button right to it in order to copy the passcode to the clickboard as indicated here:
+
+![](/exercises/ex7/images/LCAP_75-2.png)
+
+- paste the copies passcode into the field **Enter your SSO Passcode** back on the screen before.
+- press **Sign In**
+
+After a couple of seconds a new screen opens like this:
+
+![](/exercises/ex7/images/LCAP_75-3.png)    
+
+Here:
+
+- choose the organization **TechEdLCAP_lcapteched**
+- choose the space **dev**
+- Press **Appy**
 
 It is then confirmed in the lower right corner that you have logged on. Now the deployment starts and in the lower part of the screen a new tab **Task: Deploy** appears.
 It will now take several minutes for the application to be deployed. 
