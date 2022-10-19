@@ -11,11 +11,11 @@ In order to do achieve this, we need to do several things, most prominently to a
 
 ## The Code behind the Scenes
 
-To create the project up to this point you have not seen any code, everything was built using visual editors. However, under the hood code is created using the technologies that are part of the low code perspective of the Business Application Studio. In this project it is CAP and Fiori elements. There is also the Mobile Development Kit (MDK) and the BTP Workflow that are not covered in this hands on.
+To create the project up to this point you have not seen any code, everything was built using visual editors. However, under the hood code is created using the technologies that are part of the low code perspective of the Business Application Studio. In this project it is CAP and Fiori elements. There is also the Mobile Development Kit (MDK) that is not covered in this hands on.
 
-For all these technolgies whenever you change something in the visual editors code is created. The code that is created is very much the code that a developer could have written in the same way using just text editors.
+For all these technolgies whenever you change something in the visual editors code is created. The code that is created is very much the code that a developer could have written in the same way using just text editors. There is **no additional or different metatdata** created.
 
-In fact you can see the code. And what's more you can decide at any point in the project that from now on you'd rather carry on with textual editors adding more code / changing the generated code. With this is becomes possible not only to use the low code tools to create complete applications but also to jump start any kind of development that involves CAP, Fiori elements, MDK or the workflow. You can use the visual tools to a certain point and then switch to the code. Get the straight forward things done really easily and fast and if the editors do not provide enough functionality to do the final 20% of the resulting applications, one can switch to the code editors and finish it there.
+In fact you can see the code. And what's more you can decide at any point in the project that from now on you'd rather carry on with textual editors adding more code / changing the generated code. With this is becomes possible not only to use the low code tools to create complete applications but also to jump start any kind of development that involves CAP, Fiori elements or MDK. You can use the visual tools to a certain point of your liking, where you think the tools support what you want to do in an optimal way and then switch to the code. Get the straight forward things done really easily and fast and if the editors do not provide enough functionality to do the final 20% of the resulting applications, one can switch to the code editors and finish it there.
 
 How do switch to the code? Let's do this now.
 
