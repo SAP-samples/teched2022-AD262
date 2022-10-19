@@ -91,9 +91,6 @@ There are a lot of features of the low code perspective in BAS that we haven't c
     - You can then not only push your changes to the central Git repo but also allow others to collaborate on the project by sharing the project with them
     - In case of conflicts when several people work on the same project, there are simplified processes to overcome this
 - Create a mobile first application with MDK
-- Create a workflow
-    - the workflows in the low code perspective can be easily connected to service entites, which become the trigger for the workflow once there is a new entity created
-    - using one of the MDK templates, a task UI which contains the information from the entity can be easily created and assigned to user taks in an approval process
 
 
 
