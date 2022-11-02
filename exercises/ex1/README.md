@@ -21,7 +21,7 @@ Name your project
 ```
 LCAPXXX
 ```
-Where XXX the user number that was assigned to you. Please make sure that you got a user number assigned by the speakers / moderators, don't make up your own number to avoid clashes with the deployments of others. So if your user number is for example **008** your project name is **LCAP008**
+Where XXX is the user number that was assigned to you. Please make sure that you got a user number assigned by the speakers / moderators, don't make up your own number to avoid clashes with the deployments of others. So if your user number is for example **008** your project name is **LCAP008**
 
 You can provide any descriptive text if you want.  
 Confirm with a click on **Create**.
