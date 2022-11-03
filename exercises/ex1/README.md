@@ -7,7 +7,7 @@ We will also test the service and see whether it runs or not.
 
 Open your browser and launch the so-called "lobby" using the following URL:
 ```URL
-https://lcapteched-applicationdevelopment.lcnc.cfapps.eu10.hana.ondemand.com/lobby 
+https://lcapteched-applicationdevelopment.lcnc.cfapps.eu10.hana.ondemand.com/lobby
 ```
 You should see the central entry for low-code / no-code development on SAP BTP.
 
@@ -21,7 +21,7 @@ Name your project
 ```
 LCAPXXX
 ```
-Where XXX is your the user number that was assigned to you. Please make sure that you got a user number assigned by the speakers / moderators, don't make up your own number to avoid clashes with the deployments of others. So if your user number is for example **008** your project name is **LCAP008**
+Where XXX is the user number that was assigned to you. Please make sure that you got a user number assigned by the speakers / moderators, don't make up your own number to avoid clashes with the deployments of others. So if your user number is for example **008** your project name is **LCAP008**
 
 You can provide any descriptive text if you want.  
 Confirm with a click on **Create**.
@@ -69,7 +69,7 @@ Now the data model will look like this:
 
 ![](/exercises/ex1/images/LCAP_03.png)
 
-We will now create an relationship (association) between the entities to indicate of which category a capex request is.
+We will now create a relationship (association) between the entities to indicate category for a capex request.
 
 Click on the header area of the **Capex** entity and click "Add Relationship" in the menu that appears:
 

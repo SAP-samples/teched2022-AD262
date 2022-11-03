@@ -16,9 +16,9 @@ You can now see the details of the chosen Service, its entities and the properti
 
 ![](/exercises/ex1.5/images/LCAP_151.png)
 
-Press on the **Add Data Model** in the upper right corner of the screen.
+Press on the **Add External Data Model** in the upper right corner of the screen.
 
-This adds the chosen Service to you project. 
+This adds the chosen Service to you project.
 
 Return to **Home**, after a couple of seconds the new Service will show up, its 36 entities are shown.
 
@@ -30,7 +30,7 @@ You can now close the left pane of the service center by clicking the highlighte
 
 On **Home** under **Data Models** press on the **Capex** entry to get back into the graphical modeler.
 
-Here invoke the **Add Relationship** function on **Capex** again. 
+Here invoke the **Add Relationship** function on **Capex** again.
 
 ![](/exercises/ex1.5/images/LCAP_153.png)
 
@@ -52,4 +52,3 @@ You will now see the final data model:
 You've now added a reference to a data model / service in an S/4 HANA Cloud backend system to your new data model.
 
 Continue to - [Exercise 2](../ex2/README.md)
-
