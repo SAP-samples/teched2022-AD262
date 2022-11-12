@@ -13,7 +13,15 @@ You should see the central entry for low-code / no-code development on SAP BTP.
 
 ![](/exercises/ex1/images/lobby_01.png)
 
-Click on the "Create" button and select "Business Application". A dialog appears where you can enter the following name for your project. As we plan to deploy our project it is important to stick to the naming convention here.  
+Click on the "Create" button and select "Business an Application". 
+
+![](/exercises/ex1/images/lobby_02.png)
+
+On the next sreen, choose the entry for "Pro Developers".
+
+![](/exercises/ex1/images/lobby_03.png)
+
+A dialog appears where you can enter the following name for your project. As we plan to deploy our project it is important to stick to the naming convention here.  
 
 **DO NOT USE YOUR OWN PROJECT NAME**  
 
