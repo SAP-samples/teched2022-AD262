@@ -43,42 +43,45 @@ Note, we have added the new property to our data base. As the property is only n
 
 ## Add an Application Logic Handler to the project
 
-Now we need to add the logic part. For this for the first time we have to code in a text editor. Using the file explorer (if not still expanded, expand it via Hamburger menu->View->Explorer), look for the **srv** folder and expand it. This is where the graphical modelers has created our service, it is in the **service.cds** file. We don't need to look into it, but we need to know it is in there. Our service, as mentioned before, is based on CAP. In CAP one can create a new file, with the same name as the file for the service, just with an extension "js" for JavaScript. If the CAP interpreter find such a file, it will automatically look for custom handlers for the service. This is what we need now.
-
-Select the **srv** folder and with a right mouse click invoke **New File**. Enter **service.js** as a name:
+Now we need to add the logic part. 
+For this, on the **Home** page, in the **Service** tile choose the **Capex**  again. On the graphical modeler, invoke the menu by clicking on the header of **Capex** and select the **Add Logic** command.
 
 ![](/exercises/ex6/images/LCAP_64.png)
 
-Press **Ok**.
+Now there will be a dialog for you to enter a service entity (which we already have chosen, it is the **Capex** one) and a name for the new handler. The one that the system suggests is fine, take it all over by pressing the **Add** button:
 
-Now a new empty text file is opened.
-![](/exercises/ex6/images/LCAP_65.png)
+![](/exercises/ex6/images/LCAP_64-2.png)
 
-Add the following code to the file:
+One the following screen you can specify when the new handler should be invoked. Ours should be invoked **After** there was a **Read** request for the **Capex** entity. Select these properties and then press the **Open JS Editor** button:
+
+![](/exercises/ex6/images/LCAP_64-3.png)
+
+Now a new text file is opened. It already contains the stub for our handler function. Replace the line:
 
 ```Javascript
-const cds = require('@sap/cds')
-/**
-* Implementation
- */
-module.exports = cds.service.impl(async function() {
-    this.after('READ', 'Capex', capexData => {
-        const capexs = Array.isArray(capexData) ? capexData : [capexData];
-        capexs.forEach(capex => {
-            if (capex.totalcost > 200) {
-                capex.criticality = 1;
-            } else {
-                capex.criticality = 2;
-            }
-        });
-    });
-});
-
+    // Your code here
 ```
+
+with:
+
+```Javascript
+    const capexs = Array.isArray(context.results) ? context.results : [context.results];
+    capexs.forEach(capex => {
+        if (capex.totalcost > 200) {
+            capex.criticality = 1;
+        } else {
+            capex.criticality = 2;
+        }
+    });
+```
+
+so that you finally see:
+
+![](/exercises/ex6/images/LCAP_65.png)
 
 Save the file.
 
-Let's have a look what happens in the code. It defines a handler that is invoked after (**this.after**) the was a **READ** request for the **Capex** entity. The request could for example be created as an OData GET request from the browser. The CAP framework invokes our custom handler and passes the data into it, that it has just retrieved from the data base. It might be one or more entities. Our code looks into the data, it looks whether **totalcost** is greater than 200, if so, it sets our new **criticality** property to 1 otherwise to 2.
+Let's have a look what happens in the code. As set up, the function is invoked after the was a read request for the **Capex** entity. The request could for example be created as an OData GET request from the browser. The CAP framework invokes our custom handler and passes the data into it, that it has just retrieved from the data base. It might be one or more entities. Our code looks into the data, it looks whether **totalcost** is greater than 200, if so, it sets our new **criticality** property to 1 otherwise to 2.
 
 So, with this, the criticality is set according to the total cost of our Capex express.
 
