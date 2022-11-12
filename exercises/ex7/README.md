@@ -39,7 +39,7 @@ Here:
 
 - choose the organization **TechEdLCAP_lcapteched**
 - choose the space **dev**
-- Press **Appy**
+- Press **Apply**
 
 It is then confirmed in the lower right corner that you have logged on. Now the deployment starts and in the lower part of the screen a new tab **Task: Deploy** appears.
 It will now take several minutes for the application to be deployed.
