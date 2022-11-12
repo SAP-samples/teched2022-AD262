@@ -20,7 +20,7 @@ Press on the **Add External Data Model** in the upper right corner of the screen
 
 This adds the chosen Service to you project.
 
-Return to **Home**, after a couple of seconds the new Service will show up, its 36 entities are shown.
+Return to **Home**, after a couple of seconds the new Service will show up, its 43 entities are shown.
 
 ![](/exercises/ex1.5/images/LCAP_152.png)
 
