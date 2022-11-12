@@ -8,7 +8,7 @@ Go back to the **Home** tab in the Application Studio.
 
 Your home tab displays the two new entities and the external one in your model and the corresponding sample data. You can easily navigate back to the Data Model Editor by clicking on of the entities if you like.
 
-On **Home** add a new **Service** (it is actually a service entity). 
+On **Home** add a new **Service** (it is actually a service entity).
 
 The Service Editor appears and asks you to create a service. Choose  **LCAPXXX.Capex** as a **Type** where again XXX is the number of your user. Then the **Name** should be automatically filled with **Capex** derived from the type. In the list of properties you can see all of them selected, leave it like this and confirm with a click on **Create**.
 
@@ -30,9 +30,9 @@ Also change the **Name** to be **BusinessPartner**
 
 ![](/exercises/ex3/images/LCAP_33.png)
 
-## Enable Draft Editing for Capex 
+## Enable Draft Editing for Capex
 
-There is an important part we still have to do for the particular **Capex** entity: Mark it for **Draft Editing**. This means that the service entity supports storing incomplete or wrong data in a draft which is only exposed to the user that created the entity while the entity is not active and not visible for other users. This is an important UX feature: If there are applications where there are mandatory fields or validations for a field (e.g. an email field should contain a valid email address) and the user is not able to resolve these issues before the timeout of the operation (for example because the user needs to attend a meeting before finsihing) without a draft mode, all the data would get lost. Drafts make sure that all the data that is entered gets saved in a draft and only when the data is complete and validated the data is turned into a real active object. 
+There is an important part we still have to do for the particular **Capex** entity: Mark it for **Draft Editing**. This means that the service entity supports storing incomplete or wrong data in a draft which is only exposed to the user that created the entity while the entity is not active and not visible for other users. This is an important UX feature: If there are applications where there are mandatory fields or validations for a field (e.g. an email field should contain a valid email address) and the user is not able to resolve these issues before the timeout of the operation (for example because the user needs to attend a meeting before finishing) without a draft mode, all the data would get lost. Drafts make sure that all the data that is entered gets saved in a draft and only when the data is complete and validated the data is turned into a real active object. 
 
 Activate **Draft Editing** for the **Capex** entity by marking the corresponding checkbox on the property panel:
 

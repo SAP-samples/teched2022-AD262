@@ -6,13 +6,13 @@ We will now populate our data model with some sample data so that we can test ou
 
 On the **Home** screen add **Sample Data**. Choose **Create** and **Category**.
 
-An editor will appear. Change the **Mock Data** switch to **Off** and enter 3 as the number of rows. 
+An editor will appear. Change the **Mock Data** switch to **Off** and enter 3 as the number of rows.
 
 Now enter the following data:
 
 | ID | Name |
 | ----------- | ----------- |
-| 1 | Office Supplies | 
+| 1 | Office Supplies |
 | 2 | Computers |
 | 3 | Monitors |
 
@@ -26,7 +26,7 @@ This time change the **Mock Data** switch to **On** and enter 5 as the number of
 
 ![](/exercises/ex2/images/LCAP_23.png)  
 
-With respect to the Business Partner we have a special situation: It gets its data from the S/4 HANA Cloud system. So we would not need to have sample data even for testing later, we could get data even for testing from the backend, the set up automatically created the connnectivity to the backend. Indeed, when it comes to testing, there will be 2 options, either use the backend ("live") data or the sample data. The latter comes in handy during development when one does not want to get to the backend each time and play around with data.
+With respect to the Business Partner we have a special situation: It gets its data from the S/4 HANA Cloud system. So we would not need to have sample data even for testing later, we could get data even for testing from the backend, the set up automatically created the connectivity to the backend. Indeed, when it comes to testing, there will be 2 options, either use the backend ("live") data or the sample data. The latter comes in handy during development when one does not want to get to the backend each time and play around with data.
 
 We have now added the sample data that we need. We could have of course also added sample data for the Capex entity as well, but in this project we rather create its data with the resulting application.
 

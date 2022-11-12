@@ -60,9 +60,9 @@ Click on the **BusinessPartner_BusinessPartner** column on the left, and change 
 
 ## Adjust the Object Page of your UI Application and add Value Helps
 
-Now press **Page Map** on the upper part of the editor to be taken back to the page map. Now edit the **Object Page**. Expand the **Fields** under **Form** in the **General Information** section. You can now see all the properties that were automaticlly added to the form. 
+Now press **Page Map** on the upper part of the editor to be taken back to the page map. Now edit the **Object Page**. Expand the **Fields** under **Form** in the **General Information** section. You can now see all the properties that were automatically added to the form.
 
-For both, the associtation properties for the categoy and the business partner, we now want to change the label and enable value helps for them. 
+For both, the association properties for the categoy and the business partner, we now want to change the label and enable value helps for them. 
 
 To do this, first select property **category_id**, then in the panel that opens on the right, under **Label** change the text to **category**. Then below under **Display Type** select **Value Help**
 
