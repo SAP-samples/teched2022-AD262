@@ -10,7 +10,7 @@ Please keep the following links and resources available:
 1. Logon to the Development Lobby  
 https://lcapteched-applicationdevelopment.lcnc.cfapps.eu10.hana.ondemand.com/lobby
 1. Your user is assigned to you by the moderator of the tutorial. It has the format **lowcodeuser+XXX@gmail.com where XXX is a number**.
-1. Your password will also be revealed to you by the moderator of the tutorial
+1. To get the password for this user, open this [application](https://lcapteched.launchpad.cfapps.eu10.hana.ondemand.com/lcapUserList.UserListUsers-0.0.1/index.html). The user and the password for this application will be told to you by the moderator of the workshop
 1. **In almost every chapter of this tutorial there is a reference to the number XXX from your user, so a 3 digit number like 001. Make sure that you remember it well.** It is important as we will use these numbers, where every user has a different one, in order to create different names for applications and other artifacts. As we will deploy all the the artifacts to the same Business Technology Platform account, it is important that they all differ in the names and identifiers, so there are no clashes
 1. Optional: If you read this before the workshop has actually started you can invoke the following URL: https://lcapteched.eu10cf.applicationstudio.cloud.sap/index.html?origin=LCAP&pack=LCAP&gen-type=yo&yo-gen-name=@ext-lcapvsc-npm-dev/lcap&yo-arg1=Capex&root-dir=test&folder=/home/user/projects/test You will then see an image like this:
 ![](/exercises/ex0/images/LCAP_01.png)
