@@ -1,3 +1,6 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2022-AD262)](https://api.reuse.software/info/github.com/SAP-samples/teched2022-AD262)
+
+
 # AD262 - Compose full stack applications in SAP Business Application Studio
 
 ## Description
